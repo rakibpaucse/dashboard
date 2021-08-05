@@ -12,3 +12,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.sidebarNavActive{
+  background-color: #7D48B1; 
+}
+
+.sidebarNavActive > *{
+  display: block;
+}

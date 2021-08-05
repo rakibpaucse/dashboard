@@ -14,14 +14,14 @@ import Summeries from '../public/static/image/menus/Summeries.svg'
 const menuList = [
     { icon : Dashboard , pageLink : '/dashboard', title : 'Dashboard'},
     { icon : Table , pageLink :'/table' , title : 'Table'},
-    { icon : Complains , pageLink : '/dashboard', title : 'Complains' },
-    { icon : Orders , pageLink : '/dashboard', title : 'Orders'},
-    { icon : Reports , pageLink : '/dashboard', title : 'Reports' },
+    { icon : Complains , pageLink : '/complains', title : 'Complains' },
+    { icon : Orders , pageLink : '/orders', title : 'Orders'},
+    { icon : Reports , pageLink : '/reports', title : 'Reports' },
 
-    { icon : Pages , pageLink : '/dashboard', title : 'Pages' },
-    { icon : Users , pageLink : '/dashboard', title : 'Users' },
-    { icon : NewArrivals , pageLink : '/dashboard', title : 'NewArrivals' },
-    { icon : Summeries , pageLink : '/dashboard', title : 'Summeries' },
+    { icon : Pages , pageLink : '/pages', title : 'Pages' },
+    { icon : Users , pageLink : '/users', title : 'Users' },
+    { icon : NewArrivals , pageLink : '/new-arrivals', title : 'NewArrivals' },
+    { icon : Summeries , pageLink : '/summeries', title : 'Summeries' },
 ]
 
 export default menuList;

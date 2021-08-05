@@ -3,6 +3,7 @@ import Logo from '../../../../public/static/image/navs/Gull.svg'
 import Image from 'next/image'
 import menuList from '../../../../data/menuItems'
 import Link from 'next/link'
+import ActiveLink from '../../utils/ActiveLink'
 import { styled } from '@material-ui/core/styles';
 
 const Container = styled('div')({
@@ -21,7 +22,7 @@ const MenuContainer = styled('div')({
 
   });
 
-const Menu = styled('div')({
+const Menu = styled('a')({
     display:'flex' , 
     flexDirection:'column',
     justifyContent:'center',
@@ -71,12 +72,14 @@ const Sidebar = () => {
             <MenuContainer >  {/* creating sidebar menus */}
                 {
                    menuList.map( (menu , i) => (
-                       <Link href={menu.pageLink} key='' passHref >
-                           <Menu  tabIndex={i}>
+                       <ActiveLink href={menu.pageLink} key='' passHref activeClassName='sidebarNavActive' >
+
+                           <Menu  tabIndex={i} >
                                 <Image src={menu.icon} alt="Icon" width='30%' height='30%'/>  
                                 <MenuTitle className='menuTitle'> {menu.title} </MenuTitle>
-                           </Menu>                  
-                       </Link>
+                           </Menu>  
+
+                       </ActiveLink>
                    ))
                 }
             </MenuContainer>

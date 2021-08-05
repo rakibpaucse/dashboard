@@ -1,4 +1,3 @@
-import React from 'react'
 import Sidebar from './sidebar/Sidebar'
 import Header from './header/Header'
 import { styled } from '@material-ui/core/styles';
@@ -11,7 +10,7 @@ const Container = styled('div')({
   });
 
 
-const Index = (props) => {
+const Index = (props:any) => {
     return (
         <Container >
             <Sidebar />
